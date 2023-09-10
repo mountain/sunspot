@@ -1,10 +1,11 @@
+import numpy as np
 import torch as th
 from torch.utils.data import Dataset
 
 def load_walks():
     with open("data/walks.txt") as f:
         lines = f.readlines()
-    return [[int(i) for i in line.split()] for line in lines]
+    return [np.array([int(i) for i in line.split(',')], dtype=np.int32) for line in lines]
 
 
 class Walks(Dataset):

@@ -1,3 +1,6 @@
+matplotlib
+tensorboard
+
 torch
 torchvision
 lightning

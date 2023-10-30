@@ -62,6 +62,9 @@ class HyperbolicEmbedding(pl.LightningModule):
         return loss
 
     def on_train_epoch_end(self) -> None:
+        import matplotlib
+        matplotlib.use('Agg')
+
         import matplotlib.pyplot as plt
 
         with th.no_grad():

@@ -2,6 +2,7 @@ import numpy as np
 import torch as th
 from torch.utils.data import Dataset
 
+
 def load_walks():
     with open("data/walks.txt") as f:
         lines = f.readlines()

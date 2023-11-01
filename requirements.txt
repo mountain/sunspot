@@ -3,5 +3,7 @@ tensorboard
 
 torch
 torchvision
+torchtext
+torchdata
 lightning
 
